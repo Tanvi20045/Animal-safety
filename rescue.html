@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rescue Request</title>
+<title>Rescue</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -21,45 +22,40 @@
 </nav>
 
 <section class="form-section">
-    <form  id="reportForm"></form>
 
-        <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
+<form id="rescueForm">
 
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
+<div class="form-group">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+</div>
 
-        <div class="form-group">
-            <label for="location">Location of Animal:</label>
-            <input type="text" id="location" name="location" placeholder="Exact location" required>
-        </div>
+<div class="form-group">
+    <label>Phone:</label>
+    <input type="text" name="phone" required>
+</div>
 
-        <div class="form-group">
-            <label for="animal">Type of Animal:</label>
-            <select id="animal" name="animal">
-                <option>Dog</option>
-                <option>Cat</option>
-                <option>Bird</option>
-                <option>Other</option>
-            </select>
-        </div>
+<div class="form-group">
+    <label>Location:</label>
+    <input type="text" name="location" required>
+</div>
 
-        <div class="form-group">
-            <label for="details">Describe the situation:</label>
-            <textarea id="details" name="details" placeholder="Provide details about the animal or situation" rows="4" required></textarea>
-        </div>
+<div class="form-group">
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+</div>
 
-        <button type="submit">Send Rescue Request</button>
-    </form>
+<button type="submit">Send Rescue Request</button>
+
+</form>
+
 </section>
 
 <footer>
     <p>© 2026 Animal Safety</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
